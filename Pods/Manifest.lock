@@ -1,0 +1,52 @@
+PODS:
+  - Alamofire (5.6.3)
+  - ImageSlideshow (1.9.2):
+    - ImageSlideshow/Core (= 1.9.2)
+  - ImageSlideshow/Core (1.9.2)
+  - Kingfisher (5.14.1):
+    - Kingfisher/Core (= 5.14.1)
+  - Kingfisher/Core (5.14.1)
+  - RxCocoa (6.0.0):
+    - RxRelay (= 6.0.0)
+    - RxSwift (= 6.0.0)
+  - RxRelay (6.0.0):
+    - RxSwift (= 6.0.0)
+  - RxSwift (6.0.0)
+  - SnapKit (5.6.0)
+  - SwiftMessages (9.0.6):
+    - SwiftMessages/App (= 9.0.6)
+  - SwiftMessages/App (9.0.6)
+
+DEPENDENCIES:
+  - Alamofire (~> 5.2)
+  - ImageSlideshow (~> 1.9.0)
+  - Kingfisher (~> 5.14.0)
+  - RxCocoa (= 6.0.0)
+  - RxSwift (= 6.0.0)
+  - SnapKit
+  - SwiftMessages
+
+SPEC REPOS:
+  trunk:
+    - Alamofire
+    - ImageSlideshow
+    - Kingfisher
+    - RxCocoa
+    - RxRelay
+    - RxSwift
+    - SnapKit
+    - SwiftMessages
+
+SPEC CHECKSUMS:
+  Alamofire: 8b7a946e9db6f76e93eaa0d4c84e3751633959c9
+  ImageSlideshow: be305b54eaf2b2cfc7a7141c7c734605d44dc07d
+  Kingfisher: 8050bc6f7f68cbf3908bd04df7ccbac188f6d6d6
+  RxCocoa: 3f79328fafa3645b34600f37c31e64c73ae3a80e
+  RxRelay: 8d593be109c06ea850df027351beba614b012ffb
+  RxSwift: c14e798c59b9f6e9a2df8fd235602e85cc044295
+  SnapKit: e01d52ebb8ddbc333eefe2132acf85c8227d9c25
+  SwiftMessages: f0c7ef4705a570ad6c5e208b611f4333e660ed92
+
+PODFILE CHECKSUM: e49cac5d1ac06921caad7dc25097309a0f6be4c0
+
+COCOAPODS: 1.11.3
