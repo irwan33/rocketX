@@ -49,5 +49,4 @@ extension RocketViewModel: RocketViewModelOutputs {
   var rocketList: Observable<[RocketModel]> {
       rocketSubject.asObservable()
   }
-
 }

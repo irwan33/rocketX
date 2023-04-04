@@ -32,6 +32,9 @@
 		14A1FF6229AF2F8B00A9EA16 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14A1FF6129AF2F8B00A9EA16 /* BaseViewController.swift */; };
 		14A1FF6B29AF676300A9EA16 /* UITableview+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14A1FF6A29AF676300A9EA16 /* UITableview+Extension.swift */; };
 		14A1FF6D29AF67C400A9EA16 /* UIView+ReuseableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14A1FF6C29AF67C400A9EA16 /* UIView+ReuseableView.swift */; };
+		14B4C0FE29DA84B900CE0950 /* RocketDetail.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 14B4C0FD29DA84B900CE0950 /* RocketDetail.storyboard */; };
+		14B4C10029DA84D400CE0950 /* RocketDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14B4C0FF29DA84D400CE0950 /* RocketDetailViewController.swift */; };
+		14B4C10229DA84F300CE0950 /* RocketDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14B4C10129DA84F300CE0950 /* RocketDetailViewModel.swift */; };
 		620359452BE9C036204AB7E3 /* Pods_RocketXTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 30C16E553F0FAE2980833B77 /* Pods_RocketXTests.framework */; };
 		8BB62199BE8F4039CE54D481 /* Pods_RocketX.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CC896987F4E3E1F9AF7BACFA /* Pods_RocketX.framework */; };
 		A994AE7B32745CD030CFF9B7 /* Pods_RocketX_RocketXUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 271A6C7AACFA7915C8187032 /* Pods_RocketX_RocketXUITests.framework */; };
@@ -84,6 +87,9 @@
 		14A1FF6129AF2F8B00A9EA16 /* BaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		14A1FF6A29AF676300A9EA16 /* UITableview+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableview+Extension.swift"; sourceTree = "<group>"; };
 		14A1FF6C29AF67C400A9EA16 /* UIView+ReuseableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+ReuseableView.swift"; sourceTree = "<group>"; };
+		14B4C0FD29DA84B900CE0950 /* RocketDetail.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = RocketDetail.storyboard; sourceTree = "<group>"; };
+		14B4C0FF29DA84D400CE0950 /* RocketDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RocketDetailViewController.swift; sourceTree = "<group>"; };
+		14B4C10129DA84F300CE0950 /* RocketDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RocketDetailViewModel.swift; sourceTree = "<group>"; };
 		271A6C7AACFA7915C8187032 /* Pods_RocketX_RocketXUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RocketX_RocketXUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		30C16E553F0FAE2980833B77 /* Pods_RocketXTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RocketXTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		414B0EA136D319DA1D76BB7A /* Pods-RocketX-RocketXUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RocketX-RocketXUITests.release.xcconfig"; path = "Target Support Files/Pods-RocketX-RocketXUITests/Pods-RocketX-RocketXUITests.release.xcconfig"; sourceTree = "<group>"; };
@@ -228,6 +234,7 @@
 		14A1FF5129AF2EEE00A9EA16 /* Feature */ = {
 			isa = PBXGroup;
 			children = (
+				14B4C0FC29DA849500CE0950 /* RocketDetail */,
 				14A1FF5229AF2EFC00A9EA16 /* Rocket */,
 			);
 			path = Feature;
@@ -270,6 +277,16 @@
 				14A1FF5729AF2F1A00A9EA16 /* RocketTableViewCell.swift */,
 			);
 			path = RocketCell;
+			sourceTree = "<group>";
+		};
+		14B4C0FC29DA849500CE0950 /* RocketDetail */ = {
+			isa = PBXGroup;
+			children = (
+				14B4C0FD29DA84B900CE0950 /* RocketDetail.storyboard */,
+				14B4C0FF29DA84D400CE0950 /* RocketDetailViewController.swift */,
+				14B4C10129DA84F300CE0950 /* RocketDetailViewModel.swift */,
+			);
+			path = RocketDetail;
 			sourceTree = "<group>";
 		};
 		1F12CD761700708B628FF3BF /* Pods */ = {
@@ -406,6 +423,7 @@
 			files = (
 				14A1FF1B29AF2E0900A9EA16 /* LaunchScreen.storyboard in Resources */,
 				14A1FF1829AF2E0900A9EA16 /* Assets.xcassets in Resources */,
+				14B4C0FE29DA84B900CE0950 /* RocketDetail.storyboard in Resources */,
 				14A1FF1629AF2E0900A9EA16 /* Main.storyboard in Resources */,
 				1416FC4A29D5950C0025A135 /* RocketTableViewCell.xib in Resources */,
 			);
@@ -540,12 +558,14 @@
 				14A1FF4829AF2EA300A9EA16 /* RouterList.swift in Sources */,
 				14A1FF4F29AF2EE100A9EA16 /* LoaderManager.swift in Sources */,
 				14A1FF4329AF2E8600A9EA16 /* ErrorAPI.swift in Sources */,
+				14B4C10229DA84F300CE0950 /* RocketDetailViewModel.swift in Sources */,
 				14A1FF0F29AF2E0800A9EA16 /* AppDelegate.swift in Sources */,
 				14A1FF5029AF2EE100A9EA16 /* ToastManager.swift in Sources */,
 				14A1FF6229AF2F8B00A9EA16 /* BaseViewController.swift in Sources */,
 				14A1FF4429AF2E8600A9EA16 /* RemoteConstant.swift in Sources */,
 				14A1FF4B29AF2EBD00A9EA16 /* RocketModel.swift in Sources */,
 				14A1FF5F29AF2F5100A9EA16 /* Encodable+Extension.swift in Sources */,
+				14B4C10029DA84D400CE0950 /* RocketDetailViewController.swift in Sources */,
 				14A1FF5629AF2F0C00A9EA16 /* RocketViewController.swift in Sources */,
 				14A1FF1129AF2E0800A9EA16 /* SceneDelegate.swift in Sources */,
 				14A1FF6D29AF67C400A9EA16 /* UIView+ReuseableView.swift in Sources */,

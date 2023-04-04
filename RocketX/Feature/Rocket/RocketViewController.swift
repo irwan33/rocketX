@@ -75,10 +75,10 @@ class RocketViewController: BaseViewController, UITableViewDataSource, UITableVi
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let idRocket = rocketArray[indexPath.row].id
-        print("itemData.id::", idRocket)
-        
-//        let viewController = MovieDetailRouter.createModule(with: id)
-//        navigationController?.pushViewController(viewController, animated: true)
+        let storyboard = UIStoryboard(name: "RocketDetail", bundle: nil)
+        guard let playGameViewController = storyboard.instantiateViewController(withIdentifier: "RocketDetailViewController") as? RocketDetailViewController else { return }
+        playGameViewController.rocketId = idRocket
+        navigationController?.pushViewController(playGameViewController, animated: true)
     }
 }
 

@@ -11,7 +11,7 @@ import Alamofire
 enum Constants {
     
     //The API's base URL
-    static let BASE_URL = "https://api.spacexdata.com/v4"
+    static let BASE_URL = "https://api.spacexdata.com/v4/rockets"
     
     //The header fields
     enum HttpHeaderField: String {
